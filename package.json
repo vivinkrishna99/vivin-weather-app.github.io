@@ -1,0 +1,20 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Weather forecasting for major cities",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://vivinKrishna@bitbucket.org/vivinKrishna/vivin_webtips_assignments.git"
+  },
+  "keywords": [
+    "weather",
+    "app"
+  ],
+  "author": "vivin krishna",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/vivinKrishna/vivin_webtips_assignments#readme"
+}

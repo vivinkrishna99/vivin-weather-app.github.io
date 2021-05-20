@@ -1,0 +1,22 @@
+{
+    "name": "weather-server",
+    "version": "1.0.0",
+    "description": "Weather app server",
+    "main": "express-server.js",
+    "scripts": {
+        "start": "node express-server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "weather-forecast-details": "^1.0.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    },
+    "license": "MIT",
+    "keywords": [
+        "weather-app",
+        "weather-server",
+        "weather-api"
+    ]
+}

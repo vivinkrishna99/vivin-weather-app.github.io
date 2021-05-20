@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="stylesheets\weather-app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    
+</head>
+<body background="assets\general-images-icons\background.svg">
+    
+    <div class="selected-city" id="select-city">
+        
+            <img class= city-image id="city-img" src="assets\icons-for-cities\kolkata.svg" alt="">
+            <form action="" class="city-list">
+                <div class="tooltip" id="tool">
+                    <input  type="text" title="click or type to view available city" list="cities" name="cities_input" id="city" value="" pattern="[a-z]">
+                </div>
+                <datalist name="cities" id="cities">
+                    
+                </datalist>
+            </form>
+            <div class="grid-container">
+                <div class="grid-item">Temp &#8451<br><b id="tempC">25&#8451</b></div>
+                <div class="grid-item">Humidity<br><b id="hum">26%</b></div>
+                <div class="grid-item">Temp F<br><b id="tempF">78 F</b></div>  
+                <div class="grid-item">Precipitation<br><b id="preci">0%</b></div>
+            </div> 
+
+            <p class="time-date"><b id="timeTopper">10:10:<span class="sec">44</span></b><img id="imgAmPm" src="assets\general-images-icons\amState.svg" alt="AM/PM"><br><span id="dateTopper">01-MAR-2020</span> </p>
+        
+            <div class="timeline">
+                <div class="timeline-container">
+                    <div class="timelist" id="next-five-hrs">
+                        <span>NOW</span>
+                        <span>10 AM</span>
+                        <span>11 AM</span>
+                        <span>12 AM</span>
+                        <span>1 PM</span>
+                        <span>2 PM</span>
+                    </div>
+                    <div class="vertical-line" id="vertical-line">
+                        <span>I</span>
+                        <span>I</span>
+                        <span>I</span>
+                        <span>I</span>
+                        <span>I</span>
+                        <span>I</span>
+                        <span>I</span>
+                        <span>I</span>
+                        <span>I</span>
+                        <span>I</span>
+                        <span>I</span>
+                    </div>
+                    <div class="icons" id="icons-timeline">
+                        <img src="assets\weather-icons\sunnyIcon.svg" alt="">
+                        <img src="assets\weather-icons\sunnyIcon.svg" alt="">
+                        <img src="assets\weather-icons\sunnyIcon.svg" alt="">
+                        <img src="assets\weather-icons\sunnyIcon.svg" alt="">
+                        <img src="assets\weather-icons\sunnyIcon.svg" alt="">
+                        <img src="assets\weather-icons\sunnyIcon.svg" alt="">
+                    </div>
+                    <div class="temp" id="temp-line">
+                        <p>32&#8451</p>
+                        <p>34&#8451</p>
+                        <p>31&#8451</p>
+                        <p>30&#8451</p>
+                        <p>29&#8451</p>
+                        <p>29&#8451</p>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+    <!-- Middle Section of the web page -->
+    <div class="common-bg">
+        <div class="middle-section">
+            <div class="mid-head-section">
+                <p>Top cities around world</p>
+                <div class="mid-head-icons">
+                    <div class="active-icon" id="sunny-cities" title="Sunny cities"><img src="assets\weather-icons\sunnyIcon.svg" alt="Sunny Cities"></div>
+                    <div id="snowy-cities" title="Snowy cities"><img src="assets\weather-icons\snowflakeIcon.svg" alt="Snow cities"></div>
+                    <div id="rainy-cities" title="rainy cities"><img src="assets\weather-icons\rainyIcon.svg" alt="Rainy Cities"></div>
+                    <label for="displayTop">Display top</label>
+                    <input id="display-top" type="number" step="1" min="3" max="10" value="4" title="Hello!">
+                </div>
+            </div>
+
+            <div class="mid-card-container">
+                <div class="mid-buttons" id="mid-buttons">
+                    <div class="backward" id="slideLeft" type="button"><img src="assets\general-images-icons\backwardArrow.svg" alt=""></div>
+                </div>
+                <div class="card-box" id="card-box">
+                    <!-- cards will display here -->
+                </div>
+                <div class="mid-buttons" id="mid-buttons">
+                    <div class="forward" id="slideRight" type="button"><img src="assets\general-images-icons\forwardArrow.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- ---------Last section---------------- -->
+        <div class="last-section">
+            <div class="last-top">
+                <h3>Cities across continents at a glance</h3>
+                <div class="cont-temp">
+                
+                <div class="continent" id="continent" title="Continent">Continent <img id="cont-img" src="assets\general-images-icons\arrowUp.svg" alt="arrowUp/arrowDown" width="20px"> </div>
+                <div class="temperature" id="temp-grid" title="Temperature">Temperature <img id="temp-img" src="assets\general-images-icons\arrowUp.svg" alt="arrowUp/arrowDown" width="20px"> </div>
+                </div>
+            </div>
+            <div class="last-mid-grid" id="grid-items">
+                
+
+              </div>
+            </div>
+        </div>
+
+        <script type="module" src="script\weather-app\top-section.js"></script>
+        <script type="module" src="script\weather-app\middle-section.js"></script>
+        <script type="module" src="script\weather-app\bottom-section.js"></script>
+</body>
+</html>
