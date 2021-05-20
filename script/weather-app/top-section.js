@@ -44,6 +44,7 @@ citySelection.addEventListener('change', async (event) => {
 
         //Changing the city image
         city_img.src = `assets/icons-for-cities/${cityValue.toLowerCase()}.svg`;
+        console.log(cityValue.toLowerCase());
 
         //Changing the grid values
         const tempInF = cityProto.toFahrenheit();
