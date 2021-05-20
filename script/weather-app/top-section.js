@@ -43,7 +43,7 @@ citySelection.addEventListener('change', async (event) => {
         meridian.src = `assets/general-images-icons/${amPm}State.svg`;
 
         //Changing the city image
-        city_img.src = `assets/icons-for-cities/${cityValue}.svg`;
+        city_img.src = `assets/icons-for-cities/${cityValue.toLowerCase()}.svg`;
 
         //Changing the grid values
         const tempInF = cityProto.toFahrenheit();

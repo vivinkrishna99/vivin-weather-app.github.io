@@ -18,7 +18,7 @@ export function midBoxCityContents(cities,weatherIcon,card_box){
                                 <li><img src="assets/weather-icons/precipitationIcon.svg" alt=""><span style="font-weight: lighter; margin-left: 7px;">${precipitation}</span></li>
                             </ul>
                             <div class="card-city-image">
-                                <img src="assets/icons-for-cities/${cityName}.svg" alt="">
+                                <img src="assets/icons-for-cities/${cityName.toLowerCase()}.svg" alt="">
                             </div></div>`;
     
 }
