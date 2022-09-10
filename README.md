@@ -1,7 +1,7 @@
 # Weather app
 **Description**: This is a weather app which is used to display a weather conditions such as temperature, humidity, and precipation in a particular cities. It also provides different features like showing the city details with a weather type and so on. 
 
-# Link to the site:  https://vivinkrishna99.github.io/vivin-weather-app.github.io/
+### Link to the site:  https://vivinkrishna99.github.io/vivin-weather-app.github.io/
 ### User guide:
 1. Clone the repository to use the Weather App.
 2. Open the app on a HTTP protocol.
